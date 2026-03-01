@@ -1,14 +1,14 @@
 # Пункт 3: ОС Linux (Debian) та Python 3.11
 FROM python:3.11-slim
 
-# Пункт 4: Створити папку (заміни Prizvysche на своє)
+# Пункт 4: Створення папки
 WORKDIR /Prizvysche_Imya
 
-# Пункт 5: Копіюємо файли
+# Пункт 5: Копіювання файлів
 COPY main.py .
 COPY requirements.txt .
 
-# Встановлюємо бібліотеку
+# Встановлення бібліотеки
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Пункт 6: Команда для запуску
