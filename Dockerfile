@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 # Пункт 4: Створення папки
-WORKDIR /Prizvysche_Imya
+WORKDIR /Kashtanova_Krystyna
 
 # Пункт 5: Копіювання файлів
 COPY main.py .
